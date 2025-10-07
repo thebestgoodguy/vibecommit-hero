@@ -70,43 +70,43 @@ hero_background_image_dark:
 
 # Color Settings
 primary_color:
-  type: string
+  type: color
   default: "#6366f1"
   description: "Primary brand color for gradients and accents"
 primary_color_dark:
-  type: string
+  type: color
   default: "#8b5cf6"
   description: "Primary color for dark mode"
 accent_color:
-  type: string
+  type: color
   default: "#06b6d4"
   description: "Accent color for gradients and highlights"
 accent_color_dark:
-  type: string
+  type: color
   default: "#0ea5e9"
   description: "Accent color for dark mode"
 background_color:
-  type: string
+  type: color
   default: "#ffffff"
   description: "Hero background color"
 background_color_dark:
-  type: string
+  type: color
   default: "#0f172a"
   description: "Hero background color for dark mode"
 text_color:
-  type: string
+  type: color
   default: "#1e293b"
   description: "Primary text color"
 text_color_dark:
-  type: string
+  type: color
   default: "#f1f5f9"
   description: "Primary text color for dark mode"
 muted_text_color:
-  type: string
+  type: color
   default: "#64748b"
   description: "Muted text color"
 muted_text_color_dark:
-  type: string
+  type: color
   default: "#94a3b8"
   description: "Muted text color for dark mode"
 

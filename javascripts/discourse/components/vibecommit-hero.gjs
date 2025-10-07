@@ -169,12 +169,15 @@ export default class VibecommitHero extends Component {
                 <!-- Badge -->
                 {{#if settings.hero_badge_text}}
                   <div class="hero-badge">
-                    <div class="badge-dot"></div>
-                    <div class="badge-ping"></div>
-                    <span class="badge-text">{{htmlSafe settings.hero_badge_text}}</span>
-                    <div class="badge-icons">
-                      {{icon "sparkles" class="badge-icon-1"}}
-                      {{icon "star" class="badge-icon-2"}}
+                    <div class="badge-container">
+                      <div class="badge-dot">
+                        <div class="badge-ping"></div>
+                      </div>
+                      <span class="badge-text">{{htmlSafe settings.hero_badge_text}}</span>
+                      <div class="badge-icons">
+                        {{icon "sparkles" class="badge-icon-1"}}
+                        {{icon "star" class="badge-icon-2"}}
+                      </div>
                     </div>
                   </div>
                 {{/if}}
