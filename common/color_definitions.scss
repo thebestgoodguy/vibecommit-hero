@@ -16,6 +16,11 @@
   }
 }
 
+// Extract RGB values from hex color
+@function hex-to-rgb($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+
 // Hero Color Variables
 $hero-primary: dark-light-choose(
   $primary_color,
@@ -50,7 +55,9 @@ $hero-bg-img: dark-light-choose(
 // CSS Custom Properties for Hero
 :root {
   --hero-primary: #{$hero-primary};
+  --hero-primary-rgb: #{hex-to-rgb($hero-primary)};
   --hero-accent: #{$hero-accent};
+  --hero-accent-rgb: #{hex-to-rgb($hero-accent)};
   --hero-bg: #{$hero-bg};
   --hero-text: #{$hero-text};
   --hero-text-muted: #{$hero-text-muted};
