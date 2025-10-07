@@ -16,11 +16,6 @@
   }
 }
 
-// Extract RGB values from hex color
-@function hex-to-rgb($hex) {
-  @return red($hex), green($hex), blue($hex);
-}
-
 // Hero Color Variables
 $hero-primary: dark-light-choose(
   $primary_color,
@@ -55,12 +50,24 @@ $hero-bg-img: dark-light-choose(
 // CSS Custom Properties for Hero
 :root {
   --hero-primary: #{$hero-primary};
-  --hero-primary-rgb: #{hex-to-rgb($hero-primary)};
   --hero-accent: #{$hero-accent};
-  --hero-accent-rgb: #{hex-to-rgb($hero-accent)};
   --hero-bg: #{$hero-bg};
   --hero-text: #{$hero-text};
   --hero-text-muted: #{$hero-text-muted};
+  
+  // Only set RGB if colors are valid
+  @if type-of($hero-primary) == "color" {
+    --hero-primary-rgb: #{red($hero-primary), green($hero-primary), blue($hero-primary)};
+  } @else {
+    --hero-primary-rgb: 99, 102, 241; // Fallback to default purple
+  }
+  
+  @if type-of($hero-accent) == "color" {
+    --hero-accent-rgb: #{red($hero-accent), green($hero-accent), blue($hero-accent)};
+  } @else {
+    --hero-accent-rgb: 6, 182, 212; // Fallback to default cyan
+  }
+  
   @if $hero-bg-img != "" {
     --hero-bg-img: url(#{$hero-bg-img});
   }
