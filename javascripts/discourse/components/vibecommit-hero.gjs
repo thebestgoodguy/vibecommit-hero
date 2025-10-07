@@ -81,6 +81,22 @@ export default class VibecommitHero extends Component {
     return this.bannerCollapsed ? "chevron-down" : "chevron-up";
   }
 
+  get backgroundImageUrl() {
+    // Önce upload'ı kontrol et, yoksa URL'yi kullan
+    const uploadedImage = settings.hero_background_image;
+    const urlImage = settings.hero_background_image_url;
+    
+    return uploadedImage || urlImage || null;
+  }
+
+  get backgroundImageUrlDark() {
+    // Dark mode için önce upload'ı kontrol et, yoksa URL'yi kullan
+    const uploadedImageDark = settings.hero_background_image_dark;
+    const urlImageDark = settings.hero_background_image_url_dark;
+    
+    return uploadedImageDark || urlImageDark || this.backgroundImageUrl;
+  }
+
   @action
   closeBanner() {
     this.bannerClosed = true;
@@ -147,8 +163,8 @@ export default class VibecommitHero extends Component {
           <div class="hero-background">
             <div class="gradient-overlay-1"></div>
             <div class="gradient-overlay-2"></div>
-            {{#if settings.hero_background_image}}
-              <div class="hero-bg-image" style="background-image: url({{settings.hero_background_image}});"></div>
+            {{#if this.backgroundImageUrl}}
+              <div class="hero-bg-image" style="background-image: url({{this.backgroundImageUrl}});"></div>
             {{/if}}
             <div class="dark-overlay"></div>
             <!-- Floating orbs -->

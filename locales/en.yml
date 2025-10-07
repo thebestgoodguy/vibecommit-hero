@@ -21,8 +21,10 @@ en:
       cookie_lifespan: 'The lifespan of the cookie used to remember if the hero banner has been closed, expanded, or collapsed. If set to "none", NO cookies will be used with this component, and any previously created cookies related to the hero will be deleted the next time a user performs a full page load. The values are measured as a single unit, so setting "year" will be one year, "week" will be one week, etc.'
       cookie_name: "When important changes are made to the hero banner, you must change the cookie name to ensure all your users see the changes."
       plugin_outlet: "below-site-header puts it above the sidebar, above-main-container puts it above the content to the side of the sidebar"
-      hero_background_image: 'The source url for your hero background image. Tip: You can upload an image to your main theme and use the url from that, but make sure that you do not use "Uploads" section of this component. Any uploads added to this component will be deleted whenever it is updated.'
-      hero_background_image_dark: "The source url for your hero background image when system dark mode is detected."
+      hero_background_image: "Upload a background image for the hero section. Recommended size: 1920x1080px or larger for best quality."
+      hero_background_image_dark: "Upload a background image for the hero section in dark mode. If not provided, the light mode image will be used."
+      hero_background_image_url: "Alternative option: Enter a direct URL for the background image. This will only be used if no image is uploaded above."
+      hero_background_image_url_dark: "Alternative option: Enter a direct URL for the background image in dark mode. This will only be used if no image is uploaded above."
       primary_color: "Primary brand color used for gradients and main UI elements"
       primary_color_dark: "Primary brand color for dark mode"
       accent_color: "Accent color used for highlights and secondary elements"

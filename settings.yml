@@ -61,13 +61,21 @@ plugin_outlet:
 
 # Hero Background Settings
 hero_background_image:
-  type: string
+  type: upload
   default: ""
-  description: "URL for the hero background image"
+  description: "Upload a background image for the hero section (recommended: 1920x1080px or larger)"
 hero_background_image_dark:
+  type: upload
+  default: ""
+  description: "Upload a background image for the hero section in dark mode (recommended: 1920x1080px or larger)"
+hero_background_image_url:
   type: string
   default: ""
-  description: "URL for the hero background image in dark mode"
+  description: "Alternative: Enter a direct URL for background image (only used if no image is uploaded above)"
+hero_background_image_url_dark:
+  type: string
+  default: ""
+  description: "Alternative: Enter a direct URL for background image in dark mode (only used if no image is uploaded above)"
 
 # Color Settings
 primary_color:
