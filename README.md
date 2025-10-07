@@ -32,10 +32,10 @@ A modern, beautiful hero banner component for Discourse forums. This component t
 
 ## Installation
 
-1. Go to your Discourse Admin Panel → Appearance → Themes
+1. Go to your Discourse Admin Panel → Appearance → Themes -> Components Tab
 2. Click "Install" → "From a Git repository"
 3. Enter the repository URL
-4. Install and assign to your site
+4. Install
 
 ## Configuration
 
