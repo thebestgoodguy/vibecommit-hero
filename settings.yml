@@ -1,0 +1,178 @@
+# Basic Display Settings
+show_for_members:
+  type: bool
+  default: true
+show_for_anon:
+  type: bool
+  default: true
+display_on_mobile:
+  type: bool
+  default: true
+display_on_desktop:
+  type: bool
+  default: true
+display_on_homepage:
+  type: bool
+  default: true
+url_must_contain:
+  type: list
+  list_type: simple
+  default: /latest|/categories|/new|/unread|/top*|/tag/*|/tags/*|/c/*|/t/*
+
+# Control Settings
+dismissible:
+  type: bool
+  default: false
+collapsible:
+  type: bool
+  default: false
+default_collapsed_state:
+  type: enum
+  default: expanded
+  choices:
+    - expanded
+    - collapsed
+cookie_lifespan:
+  type: enum
+  default: none
+  choices:
+    - none
+    - minute
+    - day
+    - week
+    - month
+    - year
+cookie_name:
+  type: string
+  default: "vibecommit-hero-v1"
+
+# Plugin Outlet
+plugin_outlet:
+  type: enum
+  default: "below-site-header"
+  choices:
+    - "below-site-header"
+    - "above-main-container"
+    - "discovery-list-controls-above"
+    - "header-list-container-bottom"
+    - "before-topic-list"
+  refresh: true
+
+# Hero Background Settings
+hero_background_image:
+  type: string
+  default: ""
+  description: "URL for the hero background image"
+hero_background_image_dark:
+  type: string
+  default: ""
+  description: "URL for the hero background image in dark mode"
+
+# Color Settings
+primary_color:
+  type: string
+  default: "#6366f1"
+  description: "Primary brand color for gradients and accents"
+primary_color_dark:
+  type: string
+  default: "#8b5cf6"
+  description: "Primary color for dark mode"
+accent_color:
+  type: string
+  default: "#06b6d4"
+  description: "Accent color for gradients and highlights"
+accent_color_dark:
+  type: string
+  default: "#0ea5e9"
+  description: "Accent color for dark mode"
+background_color:
+  type: string
+  default: "#ffffff"
+  description: "Hero background color"
+background_color_dark:
+  type: string
+  default: "#0f172a"
+  description: "Hero background color for dark mode"
+text_color:
+  type: string
+  default: "#1e293b"
+  description: "Primary text color"
+text_color_dark:
+  type: string
+  default: "#f1f5f9"
+  description: "Primary text color for dark mode"
+muted_text_color:
+  type: string
+  default: "#64748b"
+  description: "Muted text color"
+muted_text_color_dark:
+  type: string
+  default: "#94a3b8"
+  description: "Muted text color for dark mode"
+
+# Badge Settings
+hero_badge_text:
+  type: string
+  default: "Discover Amazing Projects"
+  description: "Text displayed in the hero badge"
+
+# Title Settings
+hero_title_prefix:
+  type: string
+  default: "The Best"
+  description: "Text before the main title"
+hero_title_main:
+  type: string
+  default: "Vibe Coder"
+  description: "Main highlighted title text"
+hero_title_suffix:
+  type: string
+  default: "Projects"
+  description: "Text after the main title"
+
+# Description
+hero_description:
+  type: string
+  textarea: true
+  default: |
+    Explore cutting-edge projects built by talented developers.
+    Vote for your favorites and get inspired to build your next big thing.
+  description: "Hero description text"
+
+# Primary Button Settings
+primary_button_text:
+  type: string
+  default: "Explore Projects"
+  description: "Primary button text"
+primary_button_url:
+  type: string
+  default: "/categories"
+  description: "Primary button URL"
+primary_button_icon:
+  type: string
+  default: "code"
+  description: "Primary button icon (Font Awesome icon name)"
+
+# Secondary Button Settings
+secondary_button_text:
+  type: string
+  default: "Submit Your Project"
+  description: "Secondary button text"
+secondary_button_url:
+  type: string
+  default: "/new-topic"
+  description: "Secondary button URL"
+secondary_button_icon:
+  type: string
+  default: "bolt"
+  description: "Secondary button icon (Font Awesome icon name)"
+
+# Layout Settings
+full_width_hero:
+  type: bool
+  default: false
+  description: "Make hero full width"
+hero_min_height:
+  type: string
+  default: "50vh"
+  description: "Minimum height for the hero section (CSS units)"

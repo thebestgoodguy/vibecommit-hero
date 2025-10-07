@@ -1,0 +1,48 @@
+---
+en:
+  close:
+    title: Close the hero banner
+    label: Close
+  toggle:
+    title: Expand/Collapse the hero banner
+    collapse_label: Collapse
+    expand_label: Expand
+  theme_metadata:
+    settings:
+      show_for_members: "Display the hero banner for users logged into the forum"
+      show_for_anon: "Display the hero banner for anonymous users"
+      display_on_mobile: "Display the hero banner on mobile devices"
+      display_on_desktop: "Display the hero banner on desktop computers"
+      display_on_homepage: "Display the hero banner on the homepage"
+      url_must_contain: "Enter paths that should display the hero banner. Add <code>*</code> to the end of the path as a wildcard"
+      dismissible: "Allow the hero banner to be closed by users"
+      collapsible: "Allow the hero banner to be expanded and collapsed by users"
+      default_collapsed_state: "Default collapsed state when collapsible setting is enabled"
+      cookie_lifespan: 'The lifespan of the cookie used to remember if the hero banner has been closed, expanded, or collapsed. If set to "none", NO cookies will be used with this component, and any previously created cookies related to the hero will be deleted the next time a user performs a full page load. The values are measured as a single unit, so setting "year" will be one year, "week" will be one week, etc.'
+      cookie_name: "When important changes are made to the hero banner, you must change the cookie name to ensure all your users see the changes."
+      plugin_outlet: "below-site-header puts it above the sidebar, above-main-container puts it above the content to the side of the sidebar"
+      hero_background_image: 'The source url for your hero background image. Tip: You can upload an image to your main theme and use the url from that, but make sure that you do not use "Uploads" section of this component. Any uploads added to this component will be deleted whenever it is updated.'
+      hero_background_image_dark: "The source url for your hero background image when system dark mode is detected."
+      primary_color: "Primary brand color used for gradients and main UI elements"
+      primary_color_dark: "Primary brand color for dark mode"
+      accent_color: "Accent color used for highlights and secondary elements"
+      accent_color_dark: "Accent color for dark mode"
+      background_color: "Hero section background color"
+      background_color_dark: "Hero section background color for dark mode"
+      text_color: "Primary text color for the hero content"
+      text_color_dark: "Primary text color for dark mode"
+      muted_text_color: "Muted text color for descriptions and secondary text"
+      muted_text_color_dark: "Muted text color for dark mode"
+      hero_badge_text: "Text displayed in the animated badge at the top of the hero"
+      hero_title_prefix: "Text before the main highlighted title (e.g., 'The Best')"
+      hero_title_main: "Main title text with gradient highlighting (e.g., 'Vibe Coder')"
+      hero_title_suffix: "Text after the main highlighted title (e.g., 'Projects')"
+      hero_description: "Hero description text with HTML support. Use <br> for line breaks."
+      primary_button_text: "Text for the primary call-to-action button"
+      primary_button_url: "URL for the primary button"
+      primary_button_icon: "Icon name for the primary button (Font Awesome icon name without 'fa-')"
+      secondary_button_text: "Text for the secondary call-to-action button"
+      secondary_button_url: "URL for the secondary button"
+      secondary_button_icon: "Icon name for the secondary button (Font Awesome icon name without 'fa-')"
+      full_width_hero: "Display the hero banner at full browser width"
+      hero_min_height: "Minimum height for the hero section (CSS units like px, vh, rem)"

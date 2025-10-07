@@ -1,0 +1,44 @@
+@function dark-if-set($dark, $light) {
+  @if $dark != "" {
+    @return $dark;
+  } @else {
+    @return $light;
+  }
+}
+
+// Hero Color Variables
+$hero-primary: dark-light-choose(
+  $primary_color,
+  dark-if-set($primary_color_dark, $primary_color)
+);
+$hero-accent: dark-light-choose(
+  $accent_color,
+  dark-if-set($accent_color_dark, $accent_color)
+);
+$hero-bg: dark-light-choose(
+  $background_color,
+  dark-if-set($background_color_dark, $background_color)
+);
+$hero-text: dark-light-choose(
+  $text_color,
+  dark-if-set($text_color_dark, $text_color)
+);
+$hero-text-muted: dark-light-choose(
+  $muted_text_color,
+  dark-if-set($muted_text_color_dark, $muted_text_color)
+);
+$hero-bg-img: url(dark-light-choose(
+  $hero_background_image,
+  dark-if-set($hero_background_image_dark, $hero_background_image)
+));
+
+// CSS Custom Properties for Hero
+:root {
+  --hero-primary: #{$hero-primary};
+  --hero-accent: #{$hero-accent};
+  --hero-bg: #{$hero-bg};
+  --hero-text: #{$hero-text};
+  --hero-text-muted: #{$hero-text-muted};
+  --hero-bg-img: #{$hero-bg-img};
+  --hero-min-height: #{$hero_min_height};
+}
