@@ -32,6 +32,7 @@ default_collapsed_state:
   choices:
     - expanded
     - collapsed
+    - collapsed
 cookie_lifespan:
   type: enum
   default: none
@@ -70,45 +71,45 @@ hero_background_image_dark:
 
 # Color Settings
 primary_color:
-  type: color
+  type: string
   default: "#6366f1"
-  description: "Primary brand color for gradients and accents"
+  description: "Primary brand color for gradients and accents (hex color code, e.g., #6366f1)"
 primary_color_dark:
-  type: color
+  type: string
   default: "#8b5cf6"
-  description: "Primary color for dark mode"
+  description: "Primary color for dark mode (hex color code, e.g., #8b5cf6)"
 accent_color:
-  type: color
+  type: string
   default: "#06b6d4"
-  description: "Accent color for gradients and highlights"
+  description: "Accent color for gradients and highlights (hex color code, e.g., #06b6d4)"
 accent_color_dark:
-  type: color
+  type: string
   default: "#0ea5e9"
-  description: "Accent color for dark mode"
+  description: "Accent color for dark mode (hex color code, e.g., #0ea5e9)"
 background_color:
-  type: color
+  type: string
   default: "#ffffff"
-  description: "Hero background color"
+  description: "Hero background color (hex color code, e.g., #ffffff)"
 background_color_dark:
-  type: color
+  type: string
   default: "#0f172a"
-  description: "Hero background color for dark mode"
+  description: "Hero background color for dark mode (hex color code, e.g., #0f172a)"
 text_color:
-  type: color
+  type: string
   default: "#1e293b"
-  description: "Primary text color"
+  description: "Primary text color (hex color code, e.g., #1e293b)"
 text_color_dark:
-  type: color
+  type: string
   default: "#f1f5f9"
-  description: "Primary text color for dark mode"
+  description: "Primary text color for dark mode (hex color code, e.g., #f1f5f9)"
 muted_text_color:
-  type: color
+  type: string
   default: "#64748b"
-  description: "Muted text color"
+  description: "Muted text color (hex color code, e.g., #64748b)"
 muted_text_color_dark:
-  type: color
+  type: string
   default: "#94a3b8"
-  description: "Muted text color for dark mode"
+  description: "Muted text color for dark mode (hex color code, e.g., #94a3b8)"
 
 # Badge Settings
 hero_badge_text:
