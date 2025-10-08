@@ -2,6 +2,8 @@
 
 A modern, beautiful hero banner component for Discourse forums. This component transforms your Discourse forum with a stunning hero section inspired by modern web design trends.
 
+> **Notice**: This project is forked from [Versatile Banner](https://meta.discourse.org/t/versatile-banner/109133/232). We've built upon the excellent foundation provided by the original Versatile Banner component to create this enhanced version.
+
 ## Features
 
 - 🎨 **Modern Design**: Beautiful gradients, floating animations, and glassmorphism effects
