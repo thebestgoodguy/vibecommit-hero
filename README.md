@@ -69,7 +69,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Support
 
-For support and questions, please visit: https://meta.discourse.org/t/vibecommit-hero/109133
+For support and questions, please visit: https://meta.discourse.org/t/advanced-hero-component/384945
 
 ## Contributing
 
